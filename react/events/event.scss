@@ -1,0 +1,58 @@
+div.event-card .event-card-style {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+	grid-column-gap: 1rem;
+	box-shadow: 0 16px 64px -16px rgb(46 55 77 / 10%);
+	margin-right: 10px;
+}
+
+.event-card .event-card-image {
+	height: 200px;
+	border-radius: 0.1rem;
+}
+
+.event-details .event-page-image {
+	height: 450px;
+	border-radius: 0.0rem;
+}
+
+.event-details .venue-img {
+	height: 10rem;
+	width: 35rem;
+}
+
+.event-details .event-page-right {
+	font-size: 1.75rem;
+	line-height: 1.5rem;
+	color: #1e0a3c;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.event-card-container .event-detail-head {
+	font-size: 1.75rem;
+	line-height: 1.5rem;
+	color: #1e0a3c;
+	font-weight: 550;
+	margin-bottom: 2px;
+	padding-bottom: 40px
+}
+
+.event-card-container .event-detail-head .event-detail-content {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	color: #6e6e6e;
+	justify-content: flex;
+	padding-top: 10px;
+}
+
+.event-details .bg-event-image {
+	filter: blur(30px);
+	-webkit-filter: blur(30px);
+	height: 30%;
+	width: 100vw;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: translate(-1%, 25%);
+}
