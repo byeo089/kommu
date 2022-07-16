@@ -5,7 +5,7 @@ Front End - React.js,
 Back End - .NET Core (C#),
 Database - MS SQL
 
-***What is Kommu***
+***What is Kommu:***
 Kommu is a private social network that allows you to (1) discover and coordinate travel with friends and connections, and (2) propose home exchanges within your personal trusted networks to travel more affordably.
 
 ***Feature Contributions:***
