@@ -16,7 +16,7 @@ Kommu is a private social network that allows you to (1) discover and coordinate
 1. Event Listing
 - Event Listings page is the centralized area for users to see available event postings and engage with with the Kommu community, rendering all events on responsive cards in paginated form from records in the database.
 - A number of filtering options was implemented for quick navigation such as: 
-  - a dropdown selection menu to filter by the event type 
+  - dropdown selection menu to filter by the event type 
   - dynamic button to render a table of all free events 
   - search bar to filter events against the query in  realtime.
 - React Libraries: RC-Pagination, Bootstrap,
