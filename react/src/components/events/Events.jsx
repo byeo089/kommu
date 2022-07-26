@@ -21,16 +21,7 @@ import { FaRegHandPointDown } from "react-icons/fa";
 import EventCard from "./EventCard";
 import EventTable from "./EventTable";
 import CoverPhoto from "./CoverPhoto";
-import {
-	filterFree,
-	filter1,
-	filter2,
-	filter3,
-	filter4,
-	filter5,
-	filter6,
-	filter7,
-} from "../events/filterEvents";
+import * as ff from "../events/filterEvents";
 
 const _logger = debug.extend("Events");
 
@@ -130,14 +121,14 @@ function Events() {
 		setFilterData((prevState) => {
 			const gd = { ...prevState };
 			gd.filterArray = responseArr;
-			gd.evtIsFree = responseArr.filter(filterFree).map(mapTable);
-			gd.evtWorkshop = responseArr.filter(filter1).map(mapEvents);
-			gd.evtMeetup = responseArr.filter(filter2).map(mapEvents);
-			gd.evtCareer = responseArr.filter(filter3).map(mapEvents);
-			gd.evtDiscussion = responseArr.filter(filter4).map(mapEvents);
-			gd.evtConference = responseArr.filter(filter5).map(mapEvents);
-			gd.evtConcert = responseArr.filter(filter6).map(mapEvents);
-			gd.evtFundraiser = responseArr.filter(filter7).map(mapEvents);
+			gd.evtIsFree = responseArr.filter(ff.filtFree).map(mapTable);
+			gd.evtWorkshop = responseArr.filter(ff.filtByWork).map(mapEvents);
+			gd.evtMeetup = responseArr.filter(ff.filtByMeetup).map(mapEvents);
+			gd.evtCareer = responseArr.filter(ff.filtByCareer).map(mapEvents);
+			gd.evtDiscussion = responseArr.filter(ff.filtByDisc).map(mapEvents);
+			gd.evtConference = responseArr.filter(ff.filtByConf).map(mapEvents);
+			gd.evtConcert = responseArr.filter(ff.filtByConcert).map(mapEvents);
+			gd.evtFundraiser = responseArr.filter(ff.filtByFund).map(mapEvents);
 			return gd;
 		});
 	};
