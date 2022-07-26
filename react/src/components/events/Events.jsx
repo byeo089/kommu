@@ -11,16 +11,26 @@ import {
 import "rc-pagination/assets/index.css";
 import Pagination from "rc-pagination";
 import locale from "rc-pagination/lib/locale/en_US";
-import EventCard from "./EventCard";
-import EventTable from "./EventTable";
 import debug from "sabio-debug";
 import evtInfoServices from "../../services/eventInfoService";
 import { lookUps } from "../../services/eventWizardService";
-import CoverPhoto from "./CoverPhoto";
+import { BiHide } from "react-icons/bi";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineRollback } from "react-icons/ai";
-import { BiHide } from "react-icons/bi";
 import { FaRegHandPointDown } from "react-icons/fa";
+import EventCard from "./EventCard";
+import EventTable from "./EventTable";
+import CoverPhoto from "./CoverPhoto";
+import {
+	filterFree,
+	filter1,
+	filter2,
+	filter3,
+	filter4,
+	filter5,
+	filter6,
+	filter7,
+} from "../events/filterEvents";
 
 const _logger = debug.extend("Events");
 
@@ -304,39 +314,6 @@ function Events() {
 			default:
 				return;
 		}
-	};
-
-	const filterFree = (data) => {
-		let result = data.isFree;
-		return result;
-	};
-	const filter1 = (data) => {
-		let result = data.eventType.id === 1;
-		return result;
-	};
-	const filter2 = (data) => {
-		let result = data.eventType.id === 2;
-		return result;
-	};
-	const filter3 = (data) => {
-		let result = data.eventType.id === 3;
-		return result;
-	};
-	const filter4 = (data) => {
-		let result = data.eventType.id === 4;
-		return result;
-	};
-	const filter5 = (data) => {
-		let result = data.eventType.id === 5;
-		return result;
-	};
-	const filter6 = (data) => {
-		let result = data.eventType.id === 6;
-		return result;
-	};
-	const filter7 = (data) => {
-		let result = data.eventType.id === 7;
-		return result;
 	};
 	//#endregion
 
