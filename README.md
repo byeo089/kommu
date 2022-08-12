@@ -1,7 +1,7 @@
 # Kommu
 This repo contains my contribution to the MVP build for Kommu
 
-Front End - React.js | Back End - .NET Core (C#) | Database - MS SQL
+_Front End_ - React.js | _Back End_ - .NET Core (C#) | _Database_ - MS SQL
 
 Live Demo: https://kommu.azurewebsites.net/
 
