@@ -10,7 +10,6 @@ Project is created with:
 
 Live Demo: https://kommu.azurewebsites.net/
 
-
 ## Setup 
 To run this project, install it locally using yarn:
 
@@ -46,4 +45,18 @@ import locale from "rc-pagination/lib/locale/en_US";
 ### Event Details Page
 * Page reveals more information details about the individual event by using advanced database queries and a map visual of its location.
 * React Libraries: Google Maps, Bootstrap
+
+![Events Page](https://user-images.githubusercontent.com/99160670/186582436-39c5d6ee-f35c-45c6-8809-ae192a5b14e7.png)
+
+![Search Pagination](https://user-images.githubusercontent.com/99160670/186582460-ba6b5294-1271-46c9-8757-1896421207d7.png)
+
+![Toggle FreeEvents](https://user-images.githubusercontent.com/99160670/186582577-62d39e24-e507-4c9f-b8c8-11c441b1c643.png)
+
+![Events Detail Page](https://user-images.githubusercontent.com/99160670/186582478-30a0b9a0-43b5-4311-879a-60b338142ddd.png)
+
+
+
+
+
+
 
